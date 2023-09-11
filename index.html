@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,900;1,800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CLIMA 🌦️</title>
+</head>
+
+<body>
+    <section class="vh-100" style="background-color: #4B515D;">
+        <div class="container py-5 h-100">
+
+            
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-8 col-lg-6 col-xl-4">
+                    
+                    <!-- INPIT DE LA CIUDAD -->
+                    <div>
+                        <input 
+                            type="text" 
+                            name="City" 
+                            style="border-radius: 35px; width: 300px; height: 40px; margin: 10px;" 
+                            id="city">
+                    </div>
+                    <div>
+                        <button 
+                            style="width: 300px; padding-left: 20px; padding-right: 20px; border-radius: 35px; margin: 10px"
+                            class="btn btn-success"
+                            id="btnGetWeather"
+                            
+                        >buscar clima</button>
+                    </div>
+                    <div class="card" style="color: #4B515D; border-radius: 35px;">
+                        <div class="card-body p-4">
+
+
+                            <div class="d-flex">
+                                <h6 class="flex-grow-1" id="newCity">Warsaw</h6>
+                                <h6 id="hour">15:07</h6>
+                            </div>
+
+                            <div class="d-flex flex-column text-center mt-5 mb-4">
+                                <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;" id="temp"> 13°C </h6>
+                                <span class="small" style="color: #868B94" id="aqi_remark">Stormy</span>
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1" style="font-size: 1rem;">
+                                    <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="wind">
+                                            40 km/h
+                                        </span></div>
+                                    <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="humidity">
+                                            84% </span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cloud-sun" style="color: #868B94;"></i></i> <span class="ms-1" id="expectedTemp">
+                                            0.2
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./img/climate2.png"
+                                        width="100px">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/rapidapi.js"></script>
+</body>
+
+</html>
